@@ -1,0 +1,110 @@
+{
+  "id": "wfrp4e-rnhd-it",
+  "name": "wfrp4e-rnhd-it",
+  "title": "WFRP4e - Notti Brave & Giorni Duri",
+  "description": "A collection of new and classic adventures for the Warhammer Fantasy 4th Edition System, including new functionality such as a time-keeping application and the gnome race for use in character generation.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Heyrold",
+      "discord": "Heyrold#4406",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "wfrp4e",
+        "type": "system",
+        "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json"
+      }
+    ]
+  },
+  "scripts": [
+    "scripts/chargen-gnome.js",
+    "initialization.js",
+    "scripts/clock.js",
+    "scripts/clock-app.js"
+  ],
+  "styles": ["./styles.css"],
+  "packs": [
+    {
+      "label": "PNG (Notti Brave & Giorni Duri)",
+      "type": "Actor",
+      "name": "actors",
+      "path": "./packs/actors",
+      "system": "wfrp4e",
+      "banner": "./modules/wfrp4e-rnhd/assets/banners/nuln-by-night.webp"
+    },
+    {
+      "label": "Articoli (Notti Brave & Giorni Duri)",
+      "type": "Item",
+      "name": "items",
+      "path": "./packs/items",
+      "system": "wfrp4e",
+      "banner": "./modules/wfrp4e-rnhd/assets/banners/castle-grauenberg.webp"
+    },
+    {
+      "label": "Diario (Notti Brave & Giorni Duri)",
+      "type": "JournalEntry",
+      "name": "journals",
+      "path": "./packs/journals",
+      "system": "wfrp4e",
+      "banner": "./modules/wfrp4e-rnhd/assets/banners/three-feathers.webp"
+    },
+    {
+      "label": "Tabelle (Notti Brave & Giorni Duri)",
+      "type": "RollTable",
+      "name": "tables",
+      "path": "./packs/tables",
+      "system": "wfrp4e",
+      "banner": "./modules/wfrp4e-rnhd/assets/banners/bargames.webp"
+    },
+    {
+      "label": "Scene (Notti Brave & Giorni Duri)",
+      "type": "Scene",
+      "name": "scenes",
+      "path": "./packs/scenes",
+      "system": "wfrp4e",
+      "banner": "./modules/wfrp4e-rnhd/assets/banners/feather-on-the-reik.webp"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Notti Brave & Giorni Duri",
+      "sorting": "m",
+      "color": "#364d91",
+      "packs": ["actors", "items", "journals", "tables", "scenes"]
+    }
+  ],
+  "flags": {
+    "initializationPacks": [
+      "wfrp4e-rnhd.actors",
+      "wfrp4e-rnhd.scenes",
+      "wfrp4e-rnhd.tables",
+      "wfrp4e-rnhd.journals"
+    ],
+    "folder": {
+      "name": "Notti Brave & Giorni Duri",
+      "sorting": "m",
+      "color": "#364d91"
+    }
+  },
+  "socket": true,
+  "media": [
+    {
+      "type": "setup",
+      "url": "./modules/wfrp4e-rnhd/assets/setup.webp"
+    }
+  ],
+  "minimumCoreVersion": 11,
+  "compatibleCoreVersion": 11,
+  "compatibility": {
+    "minimum": 11,
+    "verified": 11,
+    "maximum": 11
+  },
+  "url": "https://github.com/heyrold73/wfrp4e-rnhd-it",
+  "manifest": "https://github.com/heyrold73/wfrp4e-rnhd-it/releases/latest/download/module.json",
+  "download": "https://github.com/heyrold73/wfrp4e-rnhd-it/releases/latest/download/module.zip"
+}
