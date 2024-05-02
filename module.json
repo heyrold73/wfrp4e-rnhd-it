@@ -20,13 +20,8 @@
       }
     ]
   },
-  "scripts": [
-    "scripts/chargen-gnome.js",
-    "initialization.js",
-    "scripts/clock.js",
-    "scripts/clock-app.js"
-  ],
-  "styles": ["./styles.css"],
+  "scripts": [],
+  "styles": [],
   "packs": [
     {
       "label": "PNG (Notti Brave & Giorni Duri)",
@@ -90,7 +85,7 @@
       "color": "#364d91"
     }
   },
-  "socket": true,
+  "languages": [],
   "media": [
     {
       "type": "setup",
